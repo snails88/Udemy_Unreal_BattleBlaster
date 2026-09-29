@@ -29,6 +29,8 @@ public:
 
 	void RotateTurret(FVector LookAtTarget);
 
+	void Fire();
+
 
 	UPROPERTY(VisibleAnywhere)
 	UCapsuleComponent* CapsuleComp;
@@ -38,4 +40,7 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	UStaticMeshComponent* TurretMesh;
+
+	UPROPERTY(VisibleAnywhere)
+	USceneComponent* ProjectileSpawnPoint;
 };
